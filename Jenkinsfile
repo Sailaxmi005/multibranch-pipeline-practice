@@ -7,6 +7,11 @@ pipeline {
                 branch 'testing'
             }
             steps {
+                  script{
+                 
+                    git 'https://github.com/Sailaxmi005/MULTIBRANCH-PIPELINE.git'
+                    
+                }
                 echo 'Hello World testing'
             }
         }
@@ -15,6 +20,11 @@ pipeline {
                 branch 'main'
             }
             steps {
+                  script{
+                 
+                    git 'https://github.com/Sailaxmi005/MULTIBRANCH-PIPELINE.git'
+                    
+                }
                 echo 'Hello World Main'
             }
         }
